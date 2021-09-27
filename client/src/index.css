@@ -14,11 +14,12 @@ code {
     monospace;
 }
 .App{
-  max-width: 1200px;
+  max-width: 90%;
   width: 100%;
   min-height: 100vh;
   box-shadow: 0 0 20px #eee;
   margin: 0 auto;
+  padding: 5;
   overflow: hidden;
 }
 a{

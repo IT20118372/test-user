@@ -1,18 +1,41 @@
 header{
     width: 100%;
-    min-height: 100px;
+    min-height: 50px;
     background: #282c34;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 30px;
+    padding: 5 30px;
 }
 header a{
     color: white;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    display: inline-block;
+    padding: 0px 11px;
+  position: relative;
 }
+
+header a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    color: indianred;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+    color: greenyellow;
+  }
+
 header ul li{
     display: inline-block;
     padding: 10px 20px;
@@ -53,3 +76,6 @@ header ul li img{
     display: block;
 }
 
+ .headerName{
+    color: goldenrod;
+}
